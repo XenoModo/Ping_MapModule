@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go9-7G-fka">
-                                <rect key="frame" x="0.0" y="573" width="375" height="30"/>
+                                <rect key="frame" x="138" y="593" width="99" height="30"/>
                                 <state key="normal" title="Ping "/>
                                 <connections>
                                     <action selector="pingAction:" destination="86J-dH-3cH" eventType="touchUpInside" id="eAq-AF-rR6"/>
@@ -33,9 +33,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Go9-7G-fka" firstAttribute="leading" secondItem="Lip-Gx-ar1" secondAttribute="leading" id="4Bo-Oy-bda"/>
-                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="bottom" secondItem="Go9-7G-fka" secondAttribute="bottom" constant="20" id="WVC-0p-V5K"/>
-                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="trailing" secondItem="Go9-7G-fka" secondAttribute="trailing" id="emK-Nh-Ero"/>
+                            <constraint firstItem="Go9-7G-fka" firstAttribute="leading" secondItem="Lip-Gx-ar1" secondAttribute="leading" constant="138" id="6aC-nB-MwO"/>
+                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="trailing" secondItem="Go9-7G-fka" secondAttribute="trailing" constant="138" id="HoC-7f-bIC"/>
+                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="bottom" secondItem="Go9-7G-fka" secondAttribute="bottom" id="fqC-SJ-WYR"/>
                             <constraint firstItem="Lip-Gx-ar1" firstAttribute="trailing" secondItem="Vd1-Jh-idq" secondAttribute="trailing" id="nTh-kt-gDG"/>
                             <constraint firstItem="Vd1-Jh-idq" firstAttribute="top" secondItem="Lip-Gx-ar1" secondAttribute="top" id="yEe-vz-xVA"/>
                             <constraint firstItem="Vd1-Jh-idq" firstAttribute="leading" secondItem="Lip-Gx-ar1" secondAttribute="leading" id="ybf-9P-ooy"/>

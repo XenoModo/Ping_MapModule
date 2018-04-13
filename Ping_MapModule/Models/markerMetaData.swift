@@ -3,17 +3,18 @@ import UIKit
 
 class markerMetaData: GMSMarker {
     let marker_coordinates: CLLocationCoordinate2D;
-    let markerID = Int
+    //let markerID = Int
     
     init(marker_coordinates: CLLocationCoordinate2D) {
         self.marker_coordinates = marker_coordinates
-        self.markerID = 1
+        //self.markerID = 1
         super.init()
         
         position = marker_coordinates
         appearAnimation = .pop
     }
-    (marker_coordinates: CLLocationCoordinate2D, markerID: Int) {
+    /*
+    (marker_coordinates: CLLocationCoordinate2D) {
     self.marker_coordinates = marker_coordinates
     self.markerID = markerID
     super.init()
@@ -21,4 +22,5 @@ class markerMetaData: GMSMarker {
     position = marker_coordinates
     appearAnimation = .pop
     }
+ */
 }
