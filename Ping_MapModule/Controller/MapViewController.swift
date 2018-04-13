@@ -14,7 +14,8 @@ class MapViewController: UIViewController {
         let camera = GMSCameraPosition.camera(withLatitude: 37.36, longitude: -122.0, zoom: 6.0)
         mapView.camera = camera
         showMarker(position: camera.target)
-        *///
+        */
+        //
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
