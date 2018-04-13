@@ -5,8 +5,9 @@ class MapViewController: UIViewController {
     
     
     @IBOutlet weak var mapView: GMSMapView!
-    
+    @IBOutlet weak var pingButton: UIButton!
     private let locationManager = CLLocationManager()
+    var centerMapCoordinate:CLLocationCoordinate2D!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +17,8 @@ class MapViewController: UIViewController {
         showMarker(position: camera.target)
         */
         //
+        
+        //debugCenterMarker.isHidden = true
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -28,6 +31,15 @@ class MapViewController: UIViewController {
         marker.snippet = "test snippet"
         marker.map = mapView
     }
+
+    @IBAction func pingAction(_ sender: UIButton) {
+        centerMapCoordinate = getCenterCoordinates()
+        
+        addMarker(centerMapCoordinate: centerMapCoordinate)
+        
+    }
+
+    
 }
 
 //Extensions
@@ -86,9 +98,35 @@ extension MapViewController: CLLocationManagerDelegate {
         //Centers onto the users location
         mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
         
-        
         //Stop updating the users location
         locationManager.stopUpdatingLocation()
     }
     
+    
+    //This function executes when the user moves the map
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition)  {
+        let latitude = mapView.camera.target.latitude
+        let longitude = mapView.camera.target.longitude
+        centerMapCoordinate = CLLocationCoordinate2D(latitude:latitude, longitude:longitude)
+        //let movingmarker = markerMetaData(marker_coordinates: centerMapCoordinate, 2)
+    }
+    
+    //Debug function to get centre map location
+    func getCenterCoordinates () -> CLLocationCoordinate2D {
+        let latitude = mapView.camera.target.latitude
+        let longitude = mapView.camera.target.longitude
+        centerMapCoordinate = CLLocationCoordinate2D(latitude:latitude, longitude:longitude)
+        return centerMapCoordinate
+    }
+    
+    //Debug function to add a marker to the set coordinates, for debug its set to centre
+    func addMarker(centerMapCoordinate: CLLocationCoordinate2D)
+    {
+        let marker = GMSMarker()
+        marker.position = centerMapCoordinate
+        marker.map = self.mapView
+    }
 }
+
+
+

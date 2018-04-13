@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="86J-dH-3cH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xCC-Tm-ibL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,12 +20,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-Jh-idq" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go9-7G-fka">
+                                <rect key="frame" x="0.0" y="573" width="375" height="30"/>
+                                <state key="normal" title="Ping "/>
+                                <connections>
+                                    <action selector="pingAction:" destination="86J-dH-3cH" eventType="touchUpInside" id="eAq-AF-rR6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Go9-7G-fka" firstAttribute="leading" secondItem="Lip-Gx-ar1" secondAttribute="leading" id="4Bo-Oy-bda"/>
+                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="bottom" secondItem="Go9-7G-fka" secondAttribute="bottom" constant="20" id="WVC-0p-V5K"/>
+                            <constraint firstItem="Lip-Gx-ar1" firstAttribute="trailing" secondItem="Go9-7G-fka" secondAttribute="trailing" id="emK-Nh-Ero"/>
                             <constraint firstItem="Lip-Gx-ar1" firstAttribute="trailing" secondItem="Vd1-Jh-idq" secondAttribute="trailing" id="nTh-kt-gDG"/>
                             <constraint firstItem="Vd1-Jh-idq" firstAttribute="top" secondItem="Lip-Gx-ar1" secondAttribute="top" id="yEe-vz-xVA"/>
                             <constraint firstItem="Vd1-Jh-idq" firstAttribute="leading" secondItem="Lip-Gx-ar1" secondAttribute="leading" id="ybf-9P-ooy"/>
@@ -32,13 +43,45 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lip-Gx-ar1"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dyS-pu-cNT">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Debug" id="dpQ-rA-qAd"/>
+                            <barButtonItem style="plain" id="0qg-rw-92J">
+                                <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="hIH-Fu-Nhg">
+                                    <rect key="frame" x="78" y="6.5" width="51" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </switch>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Vd1-Jh-idq" id="sMT-1k-hHU"/>
+                        <outlet property="pingButton" destination="Go9-7G-fka" id="v0f-lY-oif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8g-Mh-tpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="39"/>
+            <point key="canvasLocation" x="928.79999999999995" y="38.23088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sgO-XC-edE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xCC-Tm-ibL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="olA-cw-1xd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="86J-dH-3cH" kind="relationship" relationship="rootViewController" id="7Tf-hM-Aio"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fen-5Z-Sk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
