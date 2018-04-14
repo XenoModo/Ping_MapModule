@@ -15,6 +15,7 @@
 		53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */; };
 		53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E7D207DD9F400E17DB6 /* MapViewController.swift */; };
 		53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF9E67208050C100A076B7 /* markerMetaData.swift */; };
+		53FF9E6A2081CEB200A076B7 /* MapSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF9E692081CEB200A076B7 /* MapSearchBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		53204E76207DD36300E17DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53204E7D207DD9F400E17DB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		53FF9E67208050C100A076B7 /* markerMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = markerMetaData.swift; sourceTree = "<group>"; };
+		53FF9E692081CEB200A076B7 /* MapSearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchBarController.swift; sourceTree = "<group>"; };
 		B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +70,6 @@
 				53204E6A207DD36100E17DB6 /* AppDelegate.swift */,
 				53FF9E662080507500A076B7 /* Models */,
 				53204E7C207DD9D900E17DB6 /* Controller */,
-				53204E6C207DD36100E17DB6 /* ViewController.swift */,
 				53204E6E207DD36100E17DB6 /* Main.storyboard */,
 				53204E71207DD36300E17DB6 /* Assets.xcassets */,
 				53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */,
@@ -80,7 +81,9 @@
 		53204E7C207DD9D900E17DB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				53FF9E692081CEB200A076B7 /* MapSearchBarController.swift */,
 				53204E7D207DD9F400E17DB6 /* MapViewController.swift */,
+				53204E6C207DD36100E17DB6 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */,
 				53204E6D207DD36100E17DB6 /* ViewController.swift in Sources */,
+				53FF9E6A2081CEB200A076B7 /* MapSearchBarController.swift in Sources */,
 				53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */,
 				53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */,
 			);
