@@ -18,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         GMSServices.provideAPIKey("AIzaSyC6Oo5E5Nz5AShYDAZBclLGLhD--5Dje0A")
         // Override point for customization after application launch.
+        
+        //remove "back" text from navigation bar
+        let BarButtonItemAppearance = UIBarButtonItem.appearance()
+        BarButtonItemAppearance.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.clear], for: .normal)
         return true
+        
+        
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

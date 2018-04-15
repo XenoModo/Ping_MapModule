@@ -15,6 +15,13 @@
 		53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */; };
 		53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E7D207DD9F400E17DB6 /* MapViewController.swift */; };
 		53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF9E67208050C100A076B7 /* markerMetaData.swift */; };
+		8B94034F2081EF540009040E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B94034E2081EF530009040E /* Montserrat-Regular.otf */; };
+		8B9403512081F04F0009040E /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9403502081F04D0009040E /* Montserrat-Bold.otf */; };
+		8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */; };
+		8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB632082DADD00368499 /* SignUpVC.swift */; };
+		8B98BB6B2082DD2600368499 /* TextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6A2082DD2600368499 /* TextFieldUI.swift */; };
+		8B98BB6D2082EC2F00368499 /* FrstnmeLstnmeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */; };
+		8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB702082FA6500368499 /* TransparentNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,13 @@
 		53204E76207DD36300E17DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53204E7D207DD9F400E17DB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		53FF9E67208050C100A076B7 /* markerMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = markerMetaData.swift; sourceTree = "<group>"; };
+		8B94034E2081EF530009040E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		8B9403502081F04D0009040E /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC.swift; sourceTree = "<group>"; };
+		8B98BB632082DADD00368499 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		8B98BB6A2082DD2600368499 /* TextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUI.swift; sourceTree = "<group>"; };
+		8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrstnmeLstnmeUI.swift; sourceTree = "<group>"; };
+		8B98BB702082FA6500368499 /* TransparentNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavBar.swift; sourceTree = "<group>"; };
 		B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +61,7 @@
 		53204E5E207DD36100E17DB6 = {
 			isa = PBXGroup;
 			children = (
+				8B1088F92081EE8D005245E5 /* Font */,
 				53204E69207DD36100E17DB6 /* Ping_MapModule */,
 				53204E68207DD36100E17DB6 /* Products */,
 				7A4A2EB5639F840D9733279A /* Pods */,
@@ -65,6 +80,7 @@
 		53204E69207DD36100E17DB6 /* Ping_MapModule */ = {
 			isa = PBXGroup;
 			children = (
+				8B98BB672082DBDE00368499 /* UIEffect */,
 				53204E6A207DD36100E17DB6 /* AppDelegate.swift */,
 				53FF9E662080507500A076B7 /* Models */,
 				53204E7C207DD9D900E17DB6 /* Controller */,
@@ -81,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				53204E7D207DD9F400E17DB6 /* MapViewController.swift */,
+				8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */,
+				8B98BB632082DADD00368499 /* SignUpVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,6 +118,25 @@
 				415F674DBF6C93FA32FF4FB0 /* Pods-Ping_MapModule.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B1088F92081EE8D005245E5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8B9403502081F04D0009040E /* Montserrat-Bold.otf */,
+				8B94034E2081EF530009040E /* Montserrat-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8B98BB672082DBDE00368499 /* UIEffect */ = {
+			isa = PBXGroup;
+			children = (
+				8B98BB6A2082DD2600368499 /* TextFieldUI.swift */,
+				8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */,
+				8B98BB702082FA6500368499 /* TransparentNavBar.swift */,
+			);
+			path = UIEffect;
 			sourceTree = "<group>";
 		};
 		B2CAE2CF8AAD994EA1CB01A9 /* Frameworks */ = {
@@ -171,9 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9403512081F04F0009040E /* Montserrat-Bold.otf in Resources */,
 				53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */,
 				53204E72207DD36300E17DB6 /* Assets.xcassets in Resources */,
 				53204E70207DD36100E17DB6 /* Main.storyboard in Resources */,
+				8B94034F2081EF540009040E /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B98BB6D2082EC2F00368499 /* FrstnmeLstnmeUI.swift in Sources */,
 				53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */,
 				53204E6D207DD36100E17DB6 /* ViewController.swift in Sources */,
+				8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */,
 				53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */,
+				8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */,
 				53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */,
+				8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */,
+				8B98BB6B2082DD2600368499 /* TextFieldUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,8 +435,9 @@
 			baseConfigurationReference = B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X2T5KRSQ6R;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ping_MapModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,8 +445,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.XenoSoft.Ping-MapModule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,8 +456,9 @@
 			baseConfigurationReference = 415F674DBF6C93FA32FF4FB0 /* Pods-Ping_MapModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X2T5KRSQ6R;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Ping_MapModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,8 +466,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.XenoSoft.Ping-MapModule";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
