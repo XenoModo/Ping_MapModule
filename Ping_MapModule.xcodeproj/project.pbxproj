@@ -11,7 +11,6 @@
 		53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E6A207DD36100E17DB6 /* AppDelegate.swift */; };
 		53204E6D207DD36100E17DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E6C207DD36100E17DB6 /* ViewController.swift */; };
 		53204E70207DD36100E17DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E6E207DD36100E17DB6 /* Main.storyboard */; };
-		53204E72207DD36300E17DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53204E71207DD36300E17DB6 /* Assets.xcassets */; };
 		53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */; };
 		53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E7D207DD9F400E17DB6 /* MapViewController.swift */; };
 		53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF9E67208050C100A076B7 /* markerMetaData.swift */; };
@@ -22,6 +21,7 @@
 		8B98BB6B2082DD2600368499 /* TextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6A2082DD2600368499 /* TextFieldUI.swift */; };
 		8B98BB6D2082EC2F00368499 /* FrstnmeLstnmeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */; };
 		8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB702082FA6500368499 /* TransparentNavBar.swift */; };
+		8B98BB732083C1F400368499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B98BB722083C1F400368499 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,6 @@
 		53204E6A207DD36100E17DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53204E6C207DD36100E17DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53204E6F207DD36100E17DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		53204E71207DD36300E17DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53204E74207DD36300E17DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53204E76207DD36300E17DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53204E7D207DD9F400E17DB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		8B98BB6A2082DD2600368499 /* TextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUI.swift; sourceTree = "<group>"; };
 		8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrstnmeLstnmeUI.swift; sourceTree = "<group>"; };
 		8B98BB702082FA6500368499 /* TransparentNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavBar.swift; sourceTree = "<group>"; };
+		8B98BB722083C1F400368499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,13 +80,13 @@
 		53204E69207DD36100E17DB6 /* Ping_MapModule */ = {
 			isa = PBXGroup;
 			children = (
+				8B98BB722083C1F400368499 /* Assets.xcassets */,
 				8B98BB672082DBDE00368499 /* UIEffect */,
 				53204E6A207DD36100E17DB6 /* AppDelegate.swift */,
 				53FF9E662080507500A076B7 /* Models */,
 				53204E7C207DD9D900E17DB6 /* Controller */,
 				53204E6C207DD36100E17DB6 /* ViewController.swift */,
 				53204E6E207DD36100E17DB6 /* Main.storyboard */,
-				53204E71207DD36300E17DB6 /* Assets.xcassets */,
 				53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */,
 				53204E76207DD36300E17DB6 /* Info.plist */,
 			);
@@ -210,9 +210,9 @@
 			files = (
 				8B9403512081F04F0009040E /* Montserrat-Bold.otf in Resources */,
 				53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */,
-				53204E72207DD36300E17DB6 /* Assets.xcassets in Resources */,
 				53204E70207DD36100E17DB6 /* Main.storyboard in Resources */,
 				8B94034F2081EF540009040E /* Montserrat-Regular.otf in Resources */,
+				8B98BB732083C1F400368499 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,14 +436,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BXK7V27BSL;
 				INFOPLIST_FILE = Ping_MapModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.XenoSoft.Ping-MapModule";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shahizwan.Ping-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -457,14 +457,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BXK7V27BSL;
 				INFOPLIST_FILE = Ping_MapModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.XenoSoft.Ping-MapModule";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shahizwan.Ping-Chat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
