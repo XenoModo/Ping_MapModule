@@ -85,7 +85,6 @@
 				53204E6A207DD36100E17DB6 /* AppDelegate.swift */,
 				53FF9E662080507500A076B7 /* Models */,
 				53204E7C207DD9D900E17DB6 /* Controller */,
-				53204E6C207DD36100E17DB6 /* ViewController.swift */,
 				53204E6E207DD36100E17DB6 /* Main.storyboard */,
 				53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */,
 				53204E76207DD36300E17DB6 /* Info.plist */,
@@ -96,6 +95,7 @@
 		53204E7C207DD9D900E17DB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				53FF9E692081CEB200A076B7 /* MapSearchBarController.swift */,
 				53204E7D207DD9F400E17DB6 /* MapViewController.swift */,
 				8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */,
 				8B98BB632082DADD00368499 /* SignUpVC.swift */,
