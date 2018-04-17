@@ -8,12 +8,14 @@
 
 import UIKit
 extension UITextField{
+    //text box padding
     func setPadding(){
         let paddingView = UIView(frame: CGRect (x: 0, y: 0, width: 5, height: self.frame.height))
         self.leftView = paddingView
         self.leftViewMode = .always
         
     }
+    //text box only botom border shown
     func setBottomBorder(){
         self.layer.shadowColor = UIColor.white.cgColor
         self.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
@@ -26,6 +28,8 @@ extension UITextField{
 
 class SignUpVC: UIViewController {
     
+    @IBAction func signUpbutton(_ sender: Any) {
+    }
     @IBOutlet weak var lstnametextfield: UITextField!
     @IBOutlet weak var frstnametextfield: UITextField!
     

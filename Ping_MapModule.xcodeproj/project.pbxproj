@@ -20,6 +20,7 @@
 		8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB632082DADD00368499 /* SignUpVC.swift */; };
 		8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB702082FA6500368499 /* TransparentNavBar.swift */; };
 		8B98BB732083C1F400368499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B98BB722083C1F400368499 /* Assets.xcassets */; };
+		8BED3BA32085B3B5004F0346 /* GetProfilePicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED3BA22085B3B5004F0346 /* GetProfilePicVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		8B98BB632082DADD00368499 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		8B98BB702082FA6500368499 /* TransparentNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavBar.swift; sourceTree = "<group>"; };
 		8B98BB722083C1F400368499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BED3BA22085B3B5004F0346 /* GetProfilePicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfilePicVC.swift; sourceTree = "<group>"; };
 		B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				53204E7D207DD9F400E17DB6 /* MapViewController.swift */,
 				8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */,
 				8B98BB632082DADD00368499 /* SignUpVC.swift */,
+				8BED3BA22085B3B5004F0346 /* GetProfilePicVC.swift */,
 				8B3EF6A9208596D0004139F3 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -292,6 +295,7 @@
 				8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */,
 				53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */,
 				8B3EF6AA208596D0004139F3 /* ViewController.swift in Sources */,
+				8BED3BA32085B3B5004F0346 /* GetProfilePicVC.swift in Sources */,
 				8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
