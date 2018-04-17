@@ -9,17 +9,15 @@
 /* Begin PBXBuildFile section */
 		2E73F82577A195AA0E060027 /* Pods_Ping_MapModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B74017F837D1277C7D1E7D6 /* Pods_Ping_MapModule.framework */; };
 		53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E6A207DD36100E17DB6 /* AppDelegate.swift */; };
-		53204E6D207DD36100E17DB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E6C207DD36100E17DB6 /* ViewController.swift */; };
 		53204E70207DD36100E17DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E6E207DD36100E17DB6 /* Main.storyboard */; };
 		53204E75207DD36300E17DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53204E73207DD36300E17DB6 /* LaunchScreen.storyboard */; };
 		53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53204E7D207DD9F400E17DB6 /* MapViewController.swift */; };
 		53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF9E67208050C100A076B7 /* markerMetaData.swift */; };
+		8B3EF6A820858576004139F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3EF6A720858575004139F3 /* ViewController.swift */; };
 		8B94034F2081EF540009040E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B94034E2081EF530009040E /* Montserrat-Regular.otf */; };
 		8B9403512081F04F0009040E /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9403502081F04D0009040E /* Montserrat-Bold.otf */; };
 		8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */; };
 		8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB632082DADD00368499 /* SignUpVC.swift */; };
-		8B98BB6B2082DD2600368499 /* TextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6A2082DD2600368499 /* TextFieldUI.swift */; };
-		8B98BB6D2082EC2F00368499 /* FrstnmeLstnmeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */; };
 		8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB702082FA6500368499 /* TransparentNavBar.swift */; };
 		8B98BB732083C1F400368499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B98BB722083C1F400368499 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -35,12 +33,11 @@
 		53204E76207DD36300E17DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53204E7D207DD9F400E17DB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		53FF9E67208050C100A076B7 /* markerMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = markerMetaData.swift; sourceTree = "<group>"; };
+		8B3EF6A720858575004139F3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../.Trash/Ping_MapModule/Ping_MapModule/Controller/ViewController.swift; sourceTree = "<group>"; };
 		8B94034E2081EF530009040E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		8B9403502081F04D0009040E /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC.swift; sourceTree = "<group>"; };
 		8B98BB632082DADD00368499 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		8B98BB6A2082DD2600368499 /* TextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldUI.swift; sourceTree = "<group>"; };
-		8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrstnmeLstnmeUI.swift; sourceTree = "<group>"; };
 		8B98BB702082FA6500368499 /* TransparentNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentNavBar.swift; sourceTree = "<group>"; };
 		8B98BB722083C1F400368499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B44E79B00240F6CE7999B3B4 /* Pods-Ping_MapModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +63,7 @@
 				53204E68207DD36100E17DB6 /* Products */,
 				7A4A2EB5639F840D9733279A /* Pods */,
 				B2CAE2CF8AAD994EA1CB01A9 /* Frameworks */,
+				8B3EF6A62085852C004139F3 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +93,9 @@
 		53204E7C207DD9D900E17DB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				53FF9E692081CEB200A076B7 /* MapSearchBarController.swift */,
 				53204E7D207DD9F400E17DB6 /* MapViewController.swift */,
 				8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */,
+				8B3EF6A720858575004139F3 /* ViewController.swift */,
 				8B98BB632082DADD00368499 /* SignUpVC.swift */,
 			);
 			path = Controller;
@@ -129,11 +127,17 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		8B3EF6A62085852C004139F3 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				53204E6C207DD36100E17DB6 /* ViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		8B98BB672082DBDE00368499 /* UIEffect */ = {
 			isa = PBXGroup;
 			children = (
-				8B98BB6A2082DD2600368499 /* TextFieldUI.swift */,
-				8B98BB6C2082EC2F00368499 /* FrstnmeLstnmeUI.swift */,
 				8B98BB702082FA6500368499 /* TransparentNavBar.swift */,
 			);
 			path = UIEffect;
@@ -282,15 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B98BB6D2082EC2F00368499 /* FrstnmeLstnmeUI.swift in Sources */,
+				8B3EF6A820858576004139F3 /* ViewController.swift in Sources */,
 				53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */,
-				53204E6D207DD36100E17DB6 /* ViewController.swift in Sources */,
 				8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */,
 				53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */,
 				8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */,
 				53204E6B207DD36100E17DB6 /* AppDelegate.swift in Sources */,
 				8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */,
-				8B98BB6B2082DD2600368499 /* TextFieldUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -99,14 +99,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UGy-ZT-5as">
-                                <rect key="frame" x="30" y="329" width="309" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LASTNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="MXf-9P-RhM">
-                                <rect key="frame" x="30" y="287" width="102" height="21"/>
+                                <rect key="frame" x="30" y="276" width="102" height="21"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -118,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="27e-ml-f1o">
-                                <rect key="frame" x="30" y="380" width="309" height="27"/>
+                                <rect key="frame" x="30" y="368" width="309" height="27"/>
                                 <attributedString key="attributedText">
                                     <fragment content="By tapping &quot;Sign Up&quot;, you agree to the ">
                                         <attributes>
@@ -155,39 +149,47 @@
                                 </attributedString>
                                 <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-70-lQW">
-                                <rect key="frame" x="30" y="236" width="309" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-70-lQW">
+                                <rect key="frame" x="30" y="235" width="309" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwq-Pa-huC">
+                                <rect key="frame" x="30" y="317" width="309" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="name"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.059548720717430115" green="0.06256287544965744" blue="0.062588222324848175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UGy-ZT-5as" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="0B0-Wx-bWe"/>
+                            <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" secondItem="Alg-70-lQW" secondAttribute="trailing" constant="36" id="20q-7g-jK6"/>
                             <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="MXf-9P-RhM" secondAttribute="trailing" constant="243" id="2yv-Bm-weG"/>
-                            <constraint firstItem="27e-ml-f1o" firstAttribute="top" secondItem="UGy-ZT-5as" secondAttribute="bottom" constant="21" id="3tT-F3-X8C"/>
                             <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" secondItem="27e-ml-f1o" secondAttribute="trailing" constant="36" id="4ML-Ch-tBO"/>
                             <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="djP-nE-PQy" secondAttribute="trailing" constant="243" id="4NA-o0-j84"/>
                             <constraint firstItem="djP-nE-PQy" firstAttribute="top" secondItem="aOQ-bt-9uC" secondAttribute="top" constant="106" id="4iA-qJ-NZu"/>
-                            <constraint firstItem="Alg-70-lQW" firstAttribute="top" secondItem="djP-nE-PQy" secondAttribute="bottom" constant="21" id="81j-xX-8mO"/>
-                            <constraint firstItem="UGy-ZT-5as" firstAttribute="top" secondItem="MXf-9P-RhM" secondAttribute="bottom" constant="21" id="BTF-P0-ngo"/>
-                            <constraint firstItem="MXf-9P-RhM" firstAttribute="top" secondItem="Alg-70-lQW" secondAttribute="bottom" constant="21" id="NGU-7e-ulw"/>
-                            <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" secondItem="Alg-70-lQW" secondAttribute="trailing" constant="36" id="Rlt-OE-eDk"/>
+                            <constraint firstItem="27e-ml-f1o" firstAttribute="top" secondItem="rwq-Pa-huC" secondAttribute="bottom" constant="30" id="9yY-e2-rUn"/>
+                            <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" secondItem="rwq-Pa-huC" secondAttribute="trailing" constant="36" id="Bqn-kI-gS1"/>
+                            <constraint firstItem="rwq-Pa-huC" firstAttribute="top" secondItem="MXf-9P-RhM" secondAttribute="bottom" constant="20" id="DD3-s3-rIk"/>
+                            <constraint firstItem="Alg-70-lQW" firstAttribute="top" secondItem="djP-nE-PQy" secondAttribute="bottom" constant="20" id="NRd-nq-7f9"/>
+                            <constraint firstItem="Alg-70-lQW" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="PLi-EU-Fn6"/>
                             <constraint firstItem="MXf-9P-RhM" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="S2m-x0-9RC"/>
-                            <constraint firstItem="aOQ-bt-9uC" firstAttribute="trailing" secondItem="UGy-ZT-5as" secondAttribute="trailing" constant="36" id="Stk-9V-Byb"/>
-                            <constraint firstItem="Alg-70-lQW" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="ZvZ-tz-7bG"/>
-                            <constraint firstItem="Alg-70-lQW" firstAttribute="top" secondItem="djP-nE-PQy" secondAttribute="bottom" constant="21" id="a4k-9g-lq8"/>
                             <constraint firstItem="djP-nE-PQy" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="amf-go-KKB"/>
-                            <constraint firstItem="27e-ml-f1o" firstAttribute="top" secondItem="UGy-ZT-5as" secondAttribute="bottom" constant="21" id="gQH-NT-MZR"/>
-                            <constraint firstItem="UGy-ZT-5as" firstAttribute="top" secondItem="MXf-9P-RhM" secondAttribute="bottom" constant="21" id="smy-WK-v34"/>
+                            <constraint firstItem="rwq-Pa-huC" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="noa-p8-i12"/>
                             <constraint firstItem="27e-ml-f1o" firstAttribute="leading" secondItem="aOQ-bt-9uC" secondAttribute="leading" constant="30" id="sta-Co-Oaa"/>
                             <constraint firstItem="aOQ-bt-9uC" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="27e-ml-f1o" secondAttribute="bottom" constant="415" id="u4m-sN-4HX"/>
-                            <constraint firstItem="MXf-9P-RhM" firstAttribute="top" secondItem="Alg-70-lQW" secondAttribute="bottom" constant="21" id="yUD-cm-2nj"/>
+                            <constraint firstItem="MXf-9P-RhM" firstAttribute="top" secondItem="Alg-70-lQW" secondAttribute="bottom" constant="20" id="uT2-Ei-5Ec"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aOQ-bt-9uC"/>
                     </view>
                     <navigationItem key="navigationItem" id="HHu-Es-sxZ"/>
+                    <connections>
+                        <outlet property="frstnametextfield" destination="Alg-70-lQW" id="cqn-Cb-hGf"/>
+                        <outlet property="lstnametextfield" destination="rwq-Pa-huC" id="1Yr-sk-Kla"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9v-Hl-D33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
