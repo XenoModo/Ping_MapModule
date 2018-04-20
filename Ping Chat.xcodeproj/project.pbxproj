@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		3B74017F837D1277C7D1E7D6 /* Pods_Ping_MapModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ping_MapModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		415F674DBF6C93FA32FF4FB0 /* Pods-Ping_MapModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ping_MapModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ping_MapModule/Pods-Ping_MapModule.release.xcconfig"; sourceTree = "<group>"; };
-		53204E67207DD36100E17DB6 /* Ping_MapModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ping_MapModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53204E67207DD36100E17DB6 /* Ping Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ping Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53204E6A207DD36100E17DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53204E6C207DD36100E17DB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53204E6F207DD36100E17DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		53204E68207DD36100E17DB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53204E67207DD36100E17DB6 /* Ping_MapModule.app */,
+				53204E67207DD36100E17DB6 /* Ping Chat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53204E66207DD36100E17DB6 /* Ping_MapModule */ = {
+		53204E66207DD36100E17DB6 /* Ping Chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53204E79207DD36300E17DB6 /* Build configuration list for PBXNativeTarget "Ping_MapModule" */;
+			buildConfigurationList = 53204E79207DD36300E17DB6 /* Build configuration list for PBXNativeTarget "Ping Chat" */;
 			buildPhases = (
 				0914D7162BA51AD10908534A /* [CP] Check Pods Manifest.lock */,
 				53204E63207DD36100E17DB6 /* Sources */,
@@ -201,9 +201,9 @@
 			);
 			dependencies = (
 			);
-			name = Ping_MapModule;
+			name = "Ping Chat";
 			productName = Ping_MapModule;
-			productReference = 53204E67207DD36100E17DB6 /* Ping_MapModule.app */;
+			productReference = 53204E67207DD36100E17DB6 /* Ping Chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 53204E62207DD36100E17DB6 /* Build configuration list for PBXProject "Ping_MapModule" */;
+			buildConfigurationList = 53204E62207DD36100E17DB6 /* Build configuration list for PBXProject "Ping Chat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,7 +234,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53204E66207DD36100E17DB6 /* Ping_MapModule */,
+				53204E66207DD36100E17DB6 /* Ping Chat */,
 			);
 		};
 /* End PBXProject section */
@@ -517,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53204E62207DD36100E17DB6 /* Build configuration list for PBXProject "Ping_MapModule" */ = {
+		53204E62207DD36100E17DB6 /* Build configuration list for PBXProject "Ping Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53204E77207DD36300E17DB6 /* Debug */,
@@ -526,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53204E79207DD36300E17DB6 /* Build configuration list for PBXNativeTarget "Ping_MapModule" */ = {
+		53204E79207DD36300E17DB6 /* Build configuration list for PBXNativeTarget "Ping Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53204E7A207DD36300E17DB6 /* Debug */,

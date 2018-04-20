@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Ping_MapModule.xcodeproj">
+      location = "group:/Users/developer/Documents/Ping_MapModule/Ping Chat.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
