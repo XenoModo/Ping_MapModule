@@ -19,6 +19,8 @@
 		8B331C1C2086F9D80034ACA0 /* ContactAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B331C1B2086F9D80034ACA0 /* ContactAddVC.swift */; };
 		8B331C20208832660034ACA0 /* ContactStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B331C1F208832660034ACA0 /* ContactStruct.swift */; };
 		8B3EF6AA208596D0004139F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3EF6A9208596D0004139F3 /* ViewController.swift */; };
+		8B85270920898C800060A40C /* BirthdayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85270820898C7F0060A40C /* BirthdayVC.swift */; };
+		8B85270B2089B1FD0060A40C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85270A2089B1FD0060A40C /* LoginVC.swift */; };
 		8B94034F2081EF540009040E /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B94034E2081EF530009040E /* Montserrat-Regular.otf */; };
 		8B9403512081F04F0009040E /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B9403502081F04D0009040E /* Montserrat-Bold.otf */; };
 		8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */; };
@@ -45,6 +47,8 @@
 		8B331C1B2086F9D80034ACA0 /* ContactAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddVC.swift; sourceTree = "<group>"; };
 		8B331C1F208832660034ACA0 /* ContactStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactStruct.swift; sourceTree = "<group>"; };
 		8B3EF6A9208596D0004139F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B85270820898C7F0060A40C /* BirthdayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayVC.swift; sourceTree = "<group>"; };
+		8B85270A2089B1FD0060A40C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8B94034E2081EF530009040E /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		8B9403502081F04D0009040E /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		8B98BB612082DAC800368499 /* WelcomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC.swift; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 				8B331C172086DD1F0034ACA0 /* PasswordVC.swift */,
 				8B331C192086E2AF0034ACA0 /* EmailVC.swift */,
 				8B331C1B2086F9D80034ACA0 /* ContactAddVC.swift */,
+				8B85270820898C7F0060A40C /* BirthdayVC.swift */,
+				8B85270A2089B1FD0060A40C /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				53FF9E68208050C100A076B7 /* markerMetaData.swift in Sources */,
 				8B331C182086DD1F0034ACA0 /* PasswordVC.swift in Sources */,
 				8B98BB622082DAC800368499 /* WelcomeScreenVC.swift in Sources */,
+				8B85270920898C800060A40C /* BirthdayVC.swift in Sources */,
 				53204E7E207DD9F400E17DB6 /* MapViewController.swift in Sources */,
 				8B331C20208832660034ACA0 /* ContactStruct.swift in Sources */,
 				8B98BB642082DADD00368499 /* SignUpVC.swift in Sources */,
@@ -325,6 +332,7 @@
 				8B331C162086D2980034ACA0 /* UsernameVC.swift in Sources */,
 				8BED3BA32085B3B5004F0346 /* GetProfilePicVC.swift in Sources */,
 				8B98BB712082FA6500368499 /* TransparentNavBar.swift in Sources */,
+				8B85270B2089B1FD0060A40C /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

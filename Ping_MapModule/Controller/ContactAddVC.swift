@@ -30,6 +30,8 @@ class ContactAddVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         
         
         
+        
+        
         if cell.isSelected{
             cell.isSelected =  false
             if cell.accessoryType == UITableViewCellAccessoryType.none

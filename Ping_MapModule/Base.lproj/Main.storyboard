@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lM3-MK-3dp">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,14 +25,14 @@
             <objects>
                 <viewController id="uOt-0P-fK7" customClass="WelcomeScreenVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P0C-na-Qtz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="Welcome Screen" translatesAutoresizingMaskIntoConstraints="NO" id="3Ul-On-Ovf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1i-cX-bya">
-                                <rect key="frame" x="70" y="84" width="180" height="47"/>
+                                <rect key="frame" x="70" y="84" width="274" height="47"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="ltX-Wb-xVy">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="47"/>
@@ -40,7 +41,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" PingChat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAr-EP-pJm">
-                                        <rect key="frame" x="40" y="0.0" width="140" height="47"/>
+                                        <rect key="frame" x="40" y="0.0" width="234" height="47"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="36"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -48,17 +49,17 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPP-Ed-Aoh">
-                                <rect key="frame" x="25" y="341" width="270" height="54"/>
+                                <rect key="frame" x="25" y="597" width="364" height="54"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="LOGIN" backgroundImage="LoginButton">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="86J-dH-3cH" kind="show" id="mos-cb-Lac"/>
+                                    <segue destination="jc2-aC-77F" kind="show" id="mZk-lr-Gb1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoa-X2-e5f">
-                                <rect key="frame" x="25" y="268" width="270" height="54"/>
+                                <rect key="frame" x="25" y="524" width="364" height="54"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="SIGN UP" backgroundImage="SignUpButton"/>
                                 <connections>
@@ -96,23 +97,23 @@
             <objects>
                 <viewController id="VML-xL-bBj" customClass="SignUpVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q2c-Bg-kch">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LASTNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="MXf-9P-RhM">
-                                <rect key="frame" x="30" y="193.5" width="87.5" height="18.5"/>
+                                <rect key="frame" x="30" y="193.66666666666666" width="141" height="18.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRSTNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="djP-nE-PQy">
-                                <rect key="frame" x="30" y="124" width="92.5" height="18.5"/>
+                                <rect key="frame" x="30" y="124.00000000000001" width="141" height="18.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="27e-ml-f1o">
-                                <rect key="frame" x="30" y="263" width="254" height="27"/>
+                                <rect key="frame" x="30" y="263" width="348" height="27"/>
                                 <attributedString key="attributedText">
                                     <fragment content="By tapping &quot;Sign Up&quot;, you agree to the ">
                                         <attributes>
@@ -150,21 +151,21 @@
                                 <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Alg-70-lQW">
-                                <rect key="frame" x="30" y="157.5" width="254" height="21"/>
+                                <rect key="frame" x="30" y="157.66666666666666" width="348" height="21"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwq-Pa-huC">
-                                <rect key="frame" x="30" y="227" width="254" height="21"/>
+                                <rect key="frame" x="30" y="227" width="348" height="21"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="caN-cc-ND9">
-                                <rect key="frame" x="116.5" y="340" width="87" height="37"/>
+                                <rect key="frame" x="163.66666666666666" y="340" width="87" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="SIGN UP"/>
                                 <connections>
@@ -173,7 +174,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="dal-OS-jlD">
-                                <rect key="frame" x="140" y="35" width="40" height="47"/>
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,24 +209,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9v-Hl-D33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531" y="-374"/>
+            <point key="canvasLocation" x="2536" y="-375"/>
         </scene>
         <!--Get Profile PicVC-->
         <scene sceneID="wH1-h2-pD4">
             <objects>
                 <viewController id="qz3-Qo-p0D" customClass="GetProfilePicVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dd-7u-7aG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="T3P-kc-zBE">
-                                <rect key="frame" x="140" y="35" width="40" height="47"/>
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Pic" translatesAutoresizingMaskIntoConstraints="NO" id="KtY-tW-IEz">
-                                <rect key="frame" x="90" y="124" width="140" height="208"/>
+                                <rect key="frame" x="90" y="124" width="234" height="208"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-LI-YRA">
-                                <rect key="frame" x="31" y="364" width="258" height="37"/>
+                                <rect key="frame" x="31" y="364" width="352" height="36.666666666666686"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Choose or take a picture so your friends can easily recognize you on the map">
                                         <attributes>
@@ -238,7 +239,7 @@
                                 <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSM-jC-e7B">
-                                <rect key="frame" x="104" y="425.5" width="112" height="37"/>
+                                <rect key="frame" x="151" y="425.33333333333331" width="112" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,7 +249,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0FI-y5-aOB">
-                                <rect key="frame" x="100" y="164" width="120" height="120"/>
+                                <rect key="frame" x="147" y="164" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="F28-1z-5og"/>
@@ -288,15 +289,15 @@
             <objects>
                 <viewController id="86J-dH-3cH" customClass="MapViewController" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZXu-oI-e3Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-Jh-idq" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="628"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Go9-7G-fka">
-                                <rect key="frame" x="138" y="406" width="44" height="30"/>
+                                <rect key="frame" x="138" y="662" width="138" height="30"/>
                                 <state key="normal" title="Ping "/>
                                 <connections>
                                     <action selector="pingAction:" destination="86J-dH-3cH" eventType="touchUpInside" id="eAq-AF-rR6"/>
@@ -317,15 +318,15 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="dyS-pu-cNT">
-                        <leftBarButtonItems>
+                        <rightBarButtonItems>
                             <barButtonItem title="Debug" id="dpQ-rA-qAd"/>
                             <barButtonItem id="0qg-rw-92J">
                                 <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="hIH-Fu-Nhg">
-                                    <rect key="frame" x="78" y="6.5" width="51" height="31"/>
+                                    <rect key="frame" x="284" y="6.6666666666666679" width="51" height="31.000000000000004"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </switch>
                             </barButtonItem>
-                        </leftBarButtonItems>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -335,15 +336,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W8g-Mh-tpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="342.85714285714289"/>
+            <point key="canvasLocation" x="3493" y="346"/>
         </scene>
         <!--Transparent Nav Bar-->
         <scene sceneID="AxD-1j-Zs0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6J-MU-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lM3-MK-3dp" customClass="TransparentNavBar" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QXM-A6-OjS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -351,7 +353,6 @@
                         <segue destination="uOt-0P-fK7" kind="relationship" relationship="rootViewController" id="yfc-DS-TtK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h6J-MU-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="757.60000000000002" y="36.206896551724142"/>
         </scene>
@@ -360,14 +361,14 @@
             <objects>
                 <viewController id="m4N-ez-vbw" customClass="UsernameVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0E5-fJ-Ljy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0bg-Co-H3T">
-                                <rect key="frame" x="29.5" y="124" width="260.5" height="55.5"/>
+                                <rect key="frame" x="29.666666666666657" y="124.00000000000001" width="354.33333333333337" height="36.666666666666671"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="4mt-1l-Jr2">
-                                        <rect key="frame" x="13" y="0.0" width="235" height="18.5"/>
+                                        <rect key="frame" x="59.999999999999986" y="0.0" width="234.66666666666663" height="18.333333333333332"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Choose your unique username.">
                                                 <attributes>
@@ -380,7 +381,7 @@
                                         <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-V9-Thu">
-                                        <rect key="frame" x="34.5" y="18.5" width="191.5" height="37"/>
+                                        <rect key="frame" x="24.666666666666657" y="18.333333333333343" width="305.33333333333337" height="18.333333333333329"/>
                                         <attributedString key="attributedText">
                                             <fragment content="You can not change your username later">
                                                 <attributes>
@@ -395,7 +396,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzG-Kg-3pB">
-                                <rect key="frame" x="104" y="340" width="112" height="37"/>
+                                <rect key="frame" x="151" y="321" width="112" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,23 +406,23 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="AH0-Yn-mCF">
-                                <rect key="frame" x="140" y="35" width="40" height="47"/>
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
                             </imageView>
                             <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-gp-snd">
-                                <rect key="frame" x="29.5" y="243" width="260.5" height="21"/>
+                                <rect key="frame" x="29.666666666666657" y="224" width="354.33333333333337" height="21"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-ou-9wV">
-                                <rect key="frame" x="29.5" y="209.5" width="90.5" height="18.5"/>
+                                <rect key="frame" x="29.666666666666671" y="190.66666666666666" width="184" height="18.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking availability ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="She-B6-Mwj">
-                                <rect key="frame" x="29.5" y="272" width="112" height="12.5"/>
+                                <rect key="frame" x="29.666666666666671" y="253.00000000000003" width="151" height="12.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -461,14 +462,14 @@
             <objects>
                 <viewController id="qJF-Nk-E9k" customClass="PasswordVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WkR-so-pJF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fkS-aw-EfW">
-                                <rect key="frame" x="29.5" y="124" width="260.5" height="37"/>
+                                <rect key="frame" x="29.666666666666657" y="124.00000000000001" width="354.33333333333337" height="36.666666666666671"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="hzq-c7-K9d">
-                                        <rect key="frame" x="7" y="0.0" width="246.5" height="37"/>
+                                        <rect key="frame" x="54.000000000000014" y="0.0" width="246.33333333333337" height="36.666666666666664"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Pick a password that is at least 8 characters long">
                                                 <attributes>
@@ -483,7 +484,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSW-RN-xti">
-                                <rect key="frame" x="104" y="321" width="112" height="37"/>
+                                <rect key="frame" x="151" y="320.66666666666669" width="112" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -493,17 +494,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="Vl9-yt-4qq">
-                                <rect key="frame" x="140" y="35" width="40" height="47"/>
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
                             </imageView>
                             <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-KC-Kb8">
-                                <rect key="frame" x="29.5" y="224" width="260.5" height="21"/>
+                                <rect key="frame" x="29.666666666666657" y="223.66666666666666" width="354.33333333333337" height="21"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="scw-IQ-Ava">
-                                <rect key="frame" x="29.5" y="191" width="94.5" height="18.5"/>
+                                <rect key="frame" x="29.666666666666671" y="190.66666666666666" width="184" height="18.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -540,14 +541,14 @@
             <objects>
                 <viewController id="85N-eo-kus" customClass="EmailVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="klZ-ck-6bh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-3d-P2x">
-                                <rect key="frame" x="29.5" y="124" width="260.5" height="37"/>
+                                <rect key="frame" x="29.666666666666657" y="124.00000000000001" width="354.33333333333337" height="36.666666666666671"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="m1L-fC-gua">
-                                        <rect key="frame" x="20" y="0.0" width="221" height="37"/>
+                                        <rect key="frame" x="19" y="0.0" width="316.66666666666669" height="36.666666666666664"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Your email will be used for authentication purposes only">
                                                 <attributes>
@@ -562,7 +563,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2c-sY-HaP">
-                                <rect key="frame" x="104" y="321.5" width="112" height="37"/>
+                                <rect key="frame" x="151" y="321" width="112" height="37"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -572,17 +573,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="2M3-ZD-eTH">
-                                <rect key="frame" x="140" y="35" width="40" height="47"/>
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
                             </imageView>
                             <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-oT-dRq">
-                                <rect key="frame" x="29.5" y="224.5" width="260.5" height="21"/>
+                                <rect key="frame" x="29.666666666666657" y="224" width="354.33333333333337" height="21"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="email"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-3d-BOa">
-                                <rect key="frame" x="29.5" y="191" width="90" height="18.5"/>
+                                <rect key="frame" x="29.666666666666671" y="190.66666666666666" width="184" height="18.333333333333343"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -619,11 +620,11 @@
             <objects>
                 <viewController id="dDc-fz-aNo" customClass="ContactAddVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qGT-x1-dhl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s7M-jG-CtA">
-                                <rect key="frame" x="0.0" y="130" width="320" height="350"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="606"/>
                                 <color key="backgroundColor" red="0.12291205674409866" green="0.12974056601524353" blue="0.13987290859222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -631,7 +632,7 @@
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <searchBar alpha="0.80000000000000004" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-R8-jMY">
-                                <rect key="frame" x="0.0" y="76" width="320" height="56"/>
+                                <rect key="frame" x="0.0" y="76" width="414" height="56"/>
                                 <color key="backgroundColor" red="0.12291205669999999" green="0.129740566" blue="0.13987290860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="barTintColor" red="0.12291205674409866" green="0.12974056601524353" blue="0.13987290859222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -645,29 +646,30 @@
                                 </userDefinedRuntimeAttributes>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD FRIENDS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xPE-H0-IQd">
-                                <rect key="frame" x="106" y="40" width="108" height="21"/>
+                                <rect key="frame" x="153" y="40" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1ZP-lS-gNK">
-                                <rect key="frame" x="264.5" y="40" width="40.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcv-Xh-4qh">
+                                <rect key="frame" x="310" y="35" width="84" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="QEX-Nt-bZH" kind="show" id="sgh-ue-IIr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12291205674409866" green="0.12974056601524353" blue="0.13987290859222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JIK-R8-jMY" firstAttribute="top" secondItem="xPE-H0-IQd" secondAttribute="bottom" constant="15" id="0Fq-Ig-HsY"/>
-                            <constraint firstItem="KGA-JC-f8H" firstAttribute="trailing" secondItem="1ZP-lS-gNK" secondAttribute="trailing" constant="15" id="205-B0-7We"/>
-                            <constraint firstItem="1ZP-lS-gNK" firstAttribute="top" secondItem="KGA-JC-f8H" secondAttribute="top" constant="20" id="5un-CW-ocT"/>
+                            <constraint firstItem="fcv-Xh-4qh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xPE-H0-IQd" secondAttribute="trailing" constant="49" id="4vJ-xj-61w"/>
+                            <constraint firstItem="KGA-JC-f8H" firstAttribute="trailing" secondItem="fcv-Xh-4qh" secondAttribute="trailing" constant="20" id="58N-d5-GCb"/>
                             <constraint firstItem="s7M-jG-CtA" firstAttribute="trailing" secondItem="KGA-JC-f8H" secondAttribute="trailing" id="6ey-nd-T6R"/>
-                            <constraint firstItem="1ZP-lS-gNK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xPE-H0-IQd" secondAttribute="trailing" constant="69" id="Caw-UT-RXY"/>
                             <constraint firstItem="s7M-jG-CtA" firstAttribute="leading" secondItem="KGA-JC-f8H" secondAttribute="leading" id="HbB-Do-EkS"/>
                             <constraint firstItem="s7M-jG-CtA" firstAttribute="bottom" secondItem="KGA-JC-f8H" secondAttribute="bottom" id="Hr0-HE-2Jo"/>
                             <constraint firstItem="s7M-jG-CtA" firstAttribute="top" secondItem="JIK-R8-jMY" secondAttribute="bottom" constant="-2" id="OoF-Ij-q57"/>
                             <constraint firstItem="JIK-R8-jMY" firstAttribute="leading" secondItem="KGA-JC-f8H" secondAttribute="leading" id="W2P-eO-zYh"/>
+                            <constraint firstItem="fcv-Xh-4qh" firstAttribute="top" secondItem="KGA-JC-f8H" secondAttribute="top" constant="15" id="bTe-Bs-zsF"/>
                             <constraint firstItem="JIK-R8-jMY" firstAttribute="trailing" secondItem="KGA-JC-f8H" secondAttribute="trailing" id="ept-Dk-j8E"/>
                             <constraint firstItem="xPE-H0-IQd" firstAttribute="top" secondItem="KGA-JC-f8H" secondAttribute="top" constant="20" id="lbn-VE-fIp"/>
                             <constraint firstItem="xPE-H0-IQd" firstAttribute="centerX" secondItem="qGT-x1-dhl" secondAttribute="centerX" id="rQX-e0-23t"/>
@@ -683,12 +685,195 @@
             </objects>
             <point key="canvasLocation" x="6826.875" y="-375"/>
         </scene>
+        <!--BirthdayVC-->
+        <scene sceneID="vaA-eR-pn0">
+            <objects>
+                <viewController id="QEX-Nt-bZH" customClass="BirthdayVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jTA-IC-1eB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIRTHDAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="nee-6N-rPa">
+                                <rect key="frame" x="30" y="120.00000000000001" width="184" height="17.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjP-JR-LwH">
+                                <rect key="frame" x="131.66666666666666" y="203.66666666666666" width="150.99999999999997" height="35.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="bl2-Jr-l7R"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="CONTINUE">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Montserrat-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpe-re-EB4">
+                                <rect key="frame" x="0.0" y="259" width="414" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="Bpe-re-EB4" secondAttribute="height" multiplier="125:72" id="rXg-7y-SMR"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="545882455.92103302">
+                                    <!--2018-04-20 02:00:55 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLd-ED-5Ls">
+                                <rect key="frame" x="16" y="38" width="14" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="gM7-Jl-qKR"/>
+                                    <constraint firstAttribute="height" constant="22" id="yUf-I8-bLe"/>
+                                </constraints>
+                                <state key="normal" image="BACKARROW"/>
+                                <connections>
+                                    <segue destination="dDc-fz-aNo" kind="show" id="vLU-sM-pzo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="rG4-ld-cvB">
+                                <rect key="frame" x="140" y="25" width="134" height="47"/>
+                            </imageView>
+                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-zp-pVg">
+                                <rect key="frame" x="30" y="152.66666666666666" width="354" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12291205674409866" green="0.12974056601524353" blue="0.13987290859222412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XPM-zp-pVg" firstAttribute="top" secondItem="nee-6N-rPa" secondAttribute="bottom" constant="15" id="0jr-rr-FRG"/>
+                            <constraint firstItem="rG4-ld-cvB" firstAttribute="centerX" secondItem="jTA-IC-1eB" secondAttribute="centerX" id="2Z4-h6-tKk"/>
+                            <constraint firstItem="rG4-ld-cvB" firstAttribute="top" secondItem="Xr5-KU-3jq" secondAttribute="top" constant="5" id="9cJ-v7-aha"/>
+                            <constraint firstItem="PLd-ED-5Ls" firstAttribute="top" secondItem="Xr5-KU-3jq" secondAttribute="top" constant="18" id="A20-NR-caU"/>
+                            <constraint firstItem="rG4-ld-cvB" firstAttribute="leading" secondItem="PLd-ED-5Ls" secondAttribute="trailing" constant="110" id="AVZ-iR-mgZ"/>
+                            <constraint firstItem="Bpe-re-EB4" firstAttribute="trailing" secondItem="Xr5-KU-3jq" secondAttribute="trailing" id="FA6-Xd-Ade"/>
+                            <constraint firstItem="PLd-ED-5Ls" firstAttribute="leading" secondItem="Xr5-KU-3jq" secondAttribute="leading" constant="16" id="H9N-OG-jgw"/>
+                            <constraint firstItem="XPM-zp-pVg" firstAttribute="leading" secondItem="Xr5-KU-3jq" secondAttribute="leading" constant="30" id="Pnp-2S-TIV"/>
+                            <constraint firstItem="gjP-JR-LwH" firstAttribute="centerX" secondItem="jTA-IC-1eB" secondAttribute="centerX" id="SAq-Lb-iCu"/>
+                            <constraint firstItem="Xr5-KU-3jq" firstAttribute="trailing" secondItem="nee-6N-rPa" secondAttribute="trailing" constant="200" id="TTs-L9-qq0"/>
+                            <constraint firstItem="nee-6N-rPa" firstAttribute="leading" secondItem="Xr5-KU-3jq" secondAttribute="leading" constant="30" id="Uc7-tW-o4T"/>
+                            <constraint firstItem="Bpe-re-EB4" firstAttribute="leading" secondItem="Xr5-KU-3jq" secondAttribute="leading" id="XXy-jK-f6x"/>
+                            <constraint firstItem="nee-6N-rPa" firstAttribute="top" secondItem="Xr5-KU-3jq" secondAttribute="top" constant="100" id="ZQw-ZG-049"/>
+                            <constraint firstItem="Bpe-re-EB4" firstAttribute="top" secondItem="gjP-JR-LwH" secondAttribute="bottom" constant="20" id="gmt-H1-pBT"/>
+                            <constraint firstItem="Xr5-KU-3jq" firstAttribute="trailing" secondItem="rG4-ld-cvB" secondAttribute="trailing" constant="140" id="kAk-Cn-Wrt"/>
+                            <constraint firstItem="gjP-JR-LwH" firstAttribute="top" secondItem="XPM-zp-pVg" secondAttribute="bottom" constant="30" id="uSP-wv-3F2"/>
+                            <constraint firstItem="Xr5-KU-3jq" firstAttribute="trailing" secondItem="XPM-zp-pVg" secondAttribute="trailing" constant="30" id="umt-yx-Jqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xr5-KU-3jq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="clr-yn-XbI"/>
+                    <connections>
+                        <outlet property="birthdayTextField" destination="XPM-zp-pVg" id="NYJ-o9-91w"/>
+                        <outlet property="datePicker" destination="Bpe-re-EB4" id="VlG-YP-3GG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19x-7B-mTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7635" y="-375"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="cL8-lZ-pEl">
+            <objects>
+                <viewController id="jc2-aC-77F" customClass="LoginVC" customModule="Ping_MapModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="43c-Lb-Rgc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="U6y-qs-Die">
+                                <rect key="frame" x="30" y="193.66666666666666" width="141" height="19"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME OR EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="ao3-fu-T0u">
+                                <rect key="frame" x="30" y="124" width="173" height="19"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-Y8-OiQ">
+                                <rect key="frame" x="30" y="263" width="348" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f21-Sl-kBa">
+                                <rect key="frame" x="30" y="157.66666666666666" width="348" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTa-tQ-44O">
+                                <rect key="frame" x="30" y="227" width="348" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PING LOGO SINGLE" translatesAutoresizingMaskIntoConstraints="NO" id="KaW-bs-rTR">
+                                <rect key="frame" x="187" y="35" width="40" height="47"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujo-An-VWj">
+                                <rect key="frame" x="174" y="334" width="67" height="37"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <segue destination="86J-dH-3cH" kind="show" id="Il7-yX-WC2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ao3-fu-T0u" firstAttribute="top" secondItem="VC6-ky-393" secondAttribute="top" constant="60" id="2Ws-J6-aFc"/>
+                            <constraint firstItem="KaW-bs-rTR" firstAttribute="centerX" secondItem="43c-Lb-Rgc" secondAttribute="centerX" id="4JK-dw-5as"/>
+                            <constraint firstItem="U6y-qs-Die" firstAttribute="top" secondItem="f21-Sl-kBa" secondAttribute="bottom" constant="15" id="AWF-Jz-DGK"/>
+                            <constraint firstItem="hvC-Y8-OiQ" firstAttribute="top" secondItem="tTa-tQ-44O" secondAttribute="bottom" constant="15" id="KCr-dn-gQh"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="trailing" secondItem="hvC-Y8-OiQ" secondAttribute="trailing" constant="36" id="VPP-mr-aHS"/>
+                            <constraint firstItem="hvC-Y8-OiQ" firstAttribute="leading" secondItem="VC6-ky-393" secondAttribute="leading" constant="30" id="Zfj-is-W8q"/>
+                            <constraint firstItem="Ujo-An-VWj" firstAttribute="centerX" secondItem="43c-Lb-Rgc" secondAttribute="centerX" id="abx-Dt-93y"/>
+                            <constraint firstItem="f21-Sl-kBa" firstAttribute="top" secondItem="ao3-fu-T0u" secondAttribute="bottom" constant="15" id="eE8-vO-gH3"/>
+                            <constraint firstItem="U6y-qs-Die" firstAttribute="leading" secondItem="VC6-ky-393" secondAttribute="leading" constant="30" id="fPN-cT-fFx"/>
+                            <constraint firstItem="KaW-bs-rTR" firstAttribute="top" secondItem="43c-Lb-Rgc" secondAttribute="top" constant="35" id="hM8-0N-15D"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="trailing" secondItem="tTa-tQ-44O" secondAttribute="trailing" constant="36" id="lwb-wU-l2f"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ujo-An-VWj" secondAttribute="bottom" constant="388" id="m5n-r9-0lB"/>
+                            <constraint firstItem="tTa-tQ-44O" firstAttribute="leading" secondItem="VC6-ky-393" secondAttribute="leading" constant="30" id="nW9-qS-I8Z"/>
+                            <constraint firstItem="ao3-fu-T0u" firstAttribute="leading" secondItem="VC6-ky-393" secondAttribute="leading" constant="30" id="noD-P9-7vi"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="trailing" secondItem="f21-Sl-kBa" secondAttribute="trailing" constant="36" id="pio-Pv-p2j"/>
+                            <constraint firstItem="Ujo-An-VWj" firstAttribute="top" secondItem="hvC-Y8-OiQ" secondAttribute="bottom" constant="50" id="rZR-CB-n0f"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="ao3-fu-T0u" secondAttribute="trailing" constant="243" id="s0v-rq-bpb"/>
+                            <constraint firstItem="tTa-tQ-44O" firstAttribute="top" secondItem="U6y-qs-Die" secondAttribute="bottom" constant="15" id="ssT-to-dNg"/>
+                            <constraint firstItem="f21-Sl-kBa" firstAttribute="leading" secondItem="VC6-ky-393" secondAttribute="leading" constant="30" id="x2Y-zg-NRo"/>
+                            <constraint firstItem="VC6-ky-393" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="U6y-qs-Die" secondAttribute="trailing" constant="243" id="ziZ-VV-Mus"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VC6-ky-393"/>
+                    </view>
+                    <connections>
+                        <outlet property="psswrdTextField" destination="tTa-tQ-44O" id="sDj-JH-sRB"/>
+                        <outlet property="usremailTextField" destination="f21-Sl-kBa" id="OWm-sW-rmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdy-vi-tdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="346"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BACKARROW" width="19" height="32"/>
         <image name="LoginButton" width="326" height="54"/>
         <image name="PING LOGO SINGLE" width="40" height="47"/>
         <image name="Profile Pic" width="195" height="208"/>
         <image name="SignUpButton" width="326" height="54"/>
         <image name="Welcome Screen" width="375" height="812"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="vLU-sM-pzo"/>
+    </inferredMetricsTieBreakers>
 </document>
